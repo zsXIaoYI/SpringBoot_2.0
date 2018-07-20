@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zsza.dao.UserDao">
+
+    <resultMap id="BaseResultMap" type="cn.zsza.Vo.UserVo">
+        <id column="uid" jdbcType="INTEGER" property="uid" />
+        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="birthday" property="birthday" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="baseColumn">
+        uid,user_name,birthday
+    </sql>
+
+    <!--当开启驼峰命名法时, 返回结果填写resultType也可以-->
+    <select id="findAll" resultType="userVo">
+        select <include refid="baseColumn"/>
+        from boot_user
+    </select>
+
+    <insert id="saveOne" parameterType="userVo">
+        insert into boot_user (user_name,birthday) values  (#{userName},#{birthday})
+    </insert>
+    
+    <select id="findOne" resultType="userVo">
+        select <include refid="baseColumn"/> from boot_user where uid = #{uid}
+    </select>
+
+</mapper>

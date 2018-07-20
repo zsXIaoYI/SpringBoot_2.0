@@ -1,0 +1,6 @@
+2018-07-19 20:18:22.206 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 8
+2018-07-19 20:22:05.868 [http-nio-8090-exec-4] DEBUG cn.zsza.dao.UserDao.findOne - ==>  Preparing: select uid,user_name,birthday from boot_user where uid = ? 
+2018-07-19 20:22:05.869 [http-nio-8090-exec-4] DEBUG cn.zsza.dao.UserDao.findOne - ==> Parameters: 2(Integer)
+2018-07-19 20:23:17.478 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findOne - ==>  Preparing: select uid,user_name,birthday from boot_user where uid = ? 
+2018-07-19 20:23:17.487 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findOne - ==> Parameters: 2(Integer)
+2018-07-19 20:23:17.496 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findOne - <==      Total: 1

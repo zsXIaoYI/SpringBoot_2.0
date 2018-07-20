@@ -1,0 +1,18 @@
+2018-07-19 10:30:35.743 [http-nio-8090-exec-1] ERROR cn.zsza.dao.Log4jDao - error log4jDao.....
+2018-07-19 10:30:35.749 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user 
+2018-07-19 10:30:35.750 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 
+2018-07-19 10:30:35.751 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 7
+2018-07-19 10:30:36.276 [http-nio-8090-exec-3] ERROR cn.zsza.dao.Log4jDao - error log4jDao.....
+2018-07-19 10:30:36.277 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user 
+2018-07-19 10:30:36.277 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 
+2018-07-19 10:30:36.326 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 7
+2018-07-19 10:30:47.451 [http-nio-8090-exec-4] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM boot_user 
+2018-07-19 10:30:47.451 [http-nio-8090-exec-4] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - ==> Parameters: 
+2018-07-19 10:30:47.452 [http-nio-8090-exec-4] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - <==      Total: 1
+2018-07-19 10:30:47.453 [http-nio-8090-exec-4] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user limit ?,? 
+2018-07-19 10:30:47.453 [http-nio-8090-exec-4] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 0(Integer), 3(Integer)
+2018-07-19 10:30:47.455 [http-nio-8090-exec-4] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 3
+2018-07-19 10:31:08.989 [http-nio-8090-exec-2] ERROR cn.zsza.dao.Log4jDao - error log4jDao.....
+2018-07-19 10:31:08.990 [http-nio-8090-exec-2] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user 
+2018-07-19 10:31:08.990 [http-nio-8090-exec-2] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 
+2018-07-19 10:31:08.992 [http-nio-8090-exec-2] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 7

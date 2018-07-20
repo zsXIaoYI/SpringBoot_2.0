@@ -1,0 +1,19 @@
+2018-07-19 19:29:58.357 [main] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - ==> Parameters: 
+2018-07-19 19:29:58.380 [main] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - <==      Total: 1
+2018-07-19 19:29:58.381 [main] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user limit ?,? 
+2018-07-19 19:29:58.381 [main] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 0(Integer), 2(Integer)
+2018-07-19 19:29:58.383 [main] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 2
+2018-07-19 19:29:58.391 [main] DEBUG cn.zsza.dao.UserDao.saveOne - ==>  Preparing: insert into boot_user (user_name,birthday) values (?,?) 
+2018-07-19 19:29:58.392 [main] DEBUG cn.zsza.dao.UserDao.saveOne - ==> Parameters: ÀîÈý(String), 2018-07-19 19:29:58.39(Timestamp)
+2018-07-19 19:29:58.398 [main] DEBUG cn.zsza.dao.UserDao.saveOne - <==    Updates: 1
+2018-07-19 20:16:09.871 [http-nio-8090-exec-1] ERROR cn.zsza.dao.Log4jDao - error log4jDao.....
+2018-07-19 20:16:10.058 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user 
+2018-07-19 20:16:10.068 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 
+2018-07-19 20:16:10.078 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 8
+2018-07-19 20:16:13.555 [http-nio-8090-exec-2] ERROR cn.zsza.dao.Log4jDao - error log4jDao.....
+2018-07-19 20:16:13.557 [http-nio-8090-exec-2] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user 
+2018-07-19 20:16:13.558 [http-nio-8090-exec-2] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 
+2018-07-19 20:16:13.563 [http-nio-8090-exec-2] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 8
+2018-07-19 20:18:22.203 [http-nio-8090-exec-3] ERROR cn.zsza.dao.Log4jDao - error log4jDao.....
+2018-07-19 20:18:22.204 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user 
+2018-07-19 20:18:22.204 [http-nio-8090-exec-3] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 

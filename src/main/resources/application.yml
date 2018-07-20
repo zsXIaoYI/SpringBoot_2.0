@@ -1,0 +1,61 @@
+server:
+  port: @server.port@
+  servlet:
+    context-path: /boot
+
+spring:
+  profiles:
+    active: @environment@
+
+  rabbitmq:
+    host: 127.0.01
+    virtual-host: /
+    username: zs
+    password: 5466
+    port: 5672
+
+  redis:
+    database: 0
+    host: localhost
+    password:
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 2000ms
+
+
+
+
+logging:
+  file: log/myboot.log
+  level:
+    org.springframework.web: info
+
+
+# 自定义property
+name:
+   aa: zxxas
+   bb: xx
+
+me:
+  database:
+    driverClass: com.mysql.jdbc.Driver
+    url: @me.database.url@
+    user: @me.database.user@
+    password: @me.database.password@
+    dbInitialSize: @me.database.dbInitialSize@
+    dbMinIdle: @me.database.dbMinIdle@
+    dbMaxActive: @me.database.dbMaxActive@
+    maxWait: @me.database.maxWait@
+    timeBetweenEvictionRunsMillis: @me.database.timeBetweenEvictionRunsMillis@
+    minEvictableIdleTimeMillis: @me.database.minEvictableIdleTimeMillis@
+    validationQuery: @me.database.validationQuery@
+    testWhileIdle: @me.database.testWhileIdle@
+    testOnBorrow: @me.database.testOnBorrow@
+    testOnReturn: @me.database.testOnReturn@
+    poolPreparedStatements: @me.database.poolPreparedStatements@
+

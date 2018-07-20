@@ -1,0 +1,17 @@
+2018-07-19 10:31:22.686 [http-nio-8090-exec-5] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM boot_user 
+2018-07-19 10:31:22.693 [http-nio-8090-exec-5] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - ==> Parameters: 
+2018-07-19 10:31:22.694 [http-nio-8090-exec-5] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - <==      Total: 1
+2018-07-19 10:31:22.694 [http-nio-8090-exec-5] DEBUG cn.zsza.dao.UserDao.findAll - ==>  Preparing: select uid,user_name,birthday from boot_user limit ?,? 
+2018-07-19 10:31:22.694 [http-nio-8090-exec-5] DEBUG cn.zsza.dao.UserDao.findAll - ==> Parameters: 0(Integer), 3(Integer)
+2018-07-19 10:31:22.695 [http-nio-8090-exec-5] DEBUG cn.zsza.dao.UserDao.findAll - <==      Total: 3
+2018-07-19 19:07:29.778 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - ==>  Preparing: select uid,user_name,birthday from boot_user where uid = ? 
+2018-07-19 19:07:29.787 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - ==> Parameters: 2(Integer)
+2018-07-19 19:09:29.426 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - ==>  Preparing: select uid,user_name,birthday from boot_user where uid = ? 
+2018-07-19 19:09:29.436 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - ==> Parameters: 2(Integer)
+2018-07-19 19:09:29.445 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - <==      Total: 1
+2018-07-19 19:10:26.063 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - ==>  Preparing: select uid,user_name,birthday from boot_user where uid = ? 
+2018-07-19 19:10:26.073 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - ==> Parameters: 2(Integer)
+2018-07-19 19:10:26.082 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - <==      Total: 1
+2018-07-19 19:11:28.713 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - ==>  Preparing: select uid,user_name,birthday from boot_user where uid = ? 
+2018-07-19 19:11:28.723 [http-nio-8090-exec-1] DEBUG cn.zsza.dao.UserDao.findOne - ==> Parameters: 2(Integer)
+2018-07-19 19:29:58.339 [main] DEBUG cn.zsza.dao.UserDao.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM boot_user 
