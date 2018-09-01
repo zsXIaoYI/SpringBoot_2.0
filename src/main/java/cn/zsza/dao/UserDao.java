@@ -1,7 +1,6 @@
 package cn.zsza.dao;
 
 import cn.zsza.Vo.UserVo;
-
 import java.util.List;
 
 /**
@@ -16,5 +15,9 @@ public interface UserDao {
 	public void saveOne(UserVo userVo);
 
 	public UserVo findOne(Integer uid);
+
+	public UserVo findByName(String userName);
+
+	public Integer saveAndReturn(UserVo userVo);
 
 }
