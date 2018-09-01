@@ -16,7 +16,7 @@ public class RabbitConfig {
 
 	@Bean
 	public Queue zsQueue(){
-		return new Queue(RabbitConstant.ZS_QUEUE);
+		return new Queue(RabbitConstant.ZS_QUEUE,true);
 	}
 
 	@Bean
