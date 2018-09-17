@@ -6,8 +6,6 @@ import cn.zsza.enums.Gender;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import static org.junit.Assert.*;
-
 /**
  * Created By zhangsong
  * 20:37 2018/8/27
