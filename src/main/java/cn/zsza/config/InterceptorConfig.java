@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * 21:39 2018/8/28
  *  WebMvcConfigurerAdapter 该类在Spring5中过时了
  */
-//@Configuration
+@Configuration
 public class InterceptorConfig implements WebMvcConfigurer {
 
 	@Bean

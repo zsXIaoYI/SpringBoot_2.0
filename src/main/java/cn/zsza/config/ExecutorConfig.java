@@ -22,6 +22,7 @@ public class ExecutorConfig {
 		executor.setThreadNamePrefix("async-service");
 		executor.setRejectedExecutionHandler(new ThreadPoolExecutor.AbortPolicy());
 		executor.initialize();
+
 		return executor;
 	}
 }
