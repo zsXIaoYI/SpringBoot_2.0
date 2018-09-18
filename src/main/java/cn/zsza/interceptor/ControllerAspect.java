@@ -1,10 +1,8 @@
 package cn.zsza.interceptor;
 
-import cn.zsza.Vo.MsgResponse;
 import cn.zsza.Vo.U;
 import cn.zsza.annotation.MyAnnotation;
 import cn.zsza.exception.CustomException;
-import com.alibaba.fastjson.JSON;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -17,9 +15,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
 /**
@@ -66,7 +62,6 @@ public class ControllerAspect {
 				throw new CustomException(403,"你无权限");
 			}
 		}
-
 		return pjp.proceed();
 	}
 }
