@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zsza.dao.GenderDao">
+
+    <resultMap id="BaseResultMap" type="cn.zsza.Vo.GenderVo">
+        <id column="id"  property="id" jdbcType="INTEGER" />
+        <result column="name"  property="name" jdbcType="VARCHAR" />
+        <result column="gender" property="gender"
+                typeHandler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+    </resultMap>
+    
+    <sql id="baseColumn">
+        id,name,gender
+    </sql>
+    <update id="saveOne" parameterType="cn.zsza.Vo.GenderVo">
+        insert into gender_test (name,gender) values  (#{name},#{gender})
+    </update>
+    
+    <select id="findOne" resultMap="BaseResultMap">
+        select <include refid="baseColumn"/> from gender_test where id = #{id}
+    </select>
+
+</mapper>

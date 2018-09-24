@@ -4,7 +4,7 @@
 
     <resultMap id="BaseResultMap" type="cn.zsza.Vo.UserVo">
         <id column="uid" jdbcType="INTEGER" property="uid" />
-        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="user_name"  property="userName" jdbcType="VARCHAR" />
         <result column="birthday" property="birthday" jdbcType="TIMESTAMP" />
     </resultMap>
 
@@ -21,9 +21,20 @@
     <insert id="saveOne" parameterType="userVo">
         insert into boot_user (user_name,birthday) values  (#{userName},#{birthday})
     </insert>
+
+    <insert id="saveAndReturn" parameterType="userVo" useGeneratedKeys="true" keyProperty="uid" keyColumn="uid">
+        insert into boot_user (user_name,birthday) values  (#{userName},#{birthday})
+        <selectKey keyProperty="uid" resultType="int" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+    </insert>
     
     <select id="findOne" resultType="userVo">
         select <include refid="baseColumn"/> from boot_user where uid = #{uid}
+    </select>
+
+    <select id="findByName" resultType="userVo" parameterType="string">
+        select <include refid="baseColumn"/> from boot_user where user_name = #{userName}
     </select>
 
 </mapper>
